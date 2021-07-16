@@ -1,0 +1,46 @@
+/* Modify patron name */
+.slip h1 {
+  font-size: 14pt;
+  margin: .5rem 0;
+}
+
+/* Modify location and call number */
+.slip h2 {
+  font-size: 14pt;
+  margin: 0;
+}
+.slip h2 strong {
+  display: none;
+}
+
+/* Fit barcode images */
+.slip img {
+  max-width: 100%;
+}
+
+/* Shrink logo */
+.slip #logoContainer img {
+  height: 40px;
+}
+
+/* Shrink header */
+.slip table:first-of-type td {
+  display: block;
+}
+.slip table:first-of-type h1 {
+  font-size: 11pt;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Set max height on record title */
+/* (Cuts off very long titles) */
+.slip .recordTitle {
+  max-height: 3.25rem;
+  overflow: hidden;
+}
+
+/* Hide footer */
+.slip .messageArea + table {
+  display: none;
+}

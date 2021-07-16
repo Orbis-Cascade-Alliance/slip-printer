@@ -1,0 +1,72 @@
+@import url('slip.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  padding: 1rem;
+  width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+#slip-form {
+  background: #e7dcf2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-select {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="button"],
+select {
+  padding: .25rem;
+}
+
+input[type="button"].dark-purple {
+  background: #3d1070;
+  color: #ffffff;
+  border-radius: .25rem;
+  border-color: #6730a6;
+}
+
+input[type="button"].dark-purple:hover {
+  background: #6730a6;
+  border-color: #8261a8;
+}
+
+#slip-count {
+  font-weight: bold;
+}
+
+#slip-actions {
+  margin-bottom: 1rem;
+}
+
+#slips {
+  background: #ccc;
+  padding: .5rem;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+}
+
+.slip {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.75rem 0.5rem;
+  padding: .5rem;
+  background: #fff;
+  font-size: 11pt;
+}
