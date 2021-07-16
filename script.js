@@ -29,7 +29,8 @@ function get_slips() {
 
 // Update the number of columns displayed
 function update_columns(columns) {
-  $('.slip').css('flex-basis', Math.floor(100/columns) + '%');
+  var percentage = Math.floor(100/columns);
+  $('.slip').css('max-width', percentage + '%');
 }
 
 // Trigger bulk action on printouts (print or cancel)
