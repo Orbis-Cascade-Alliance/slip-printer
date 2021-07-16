@@ -34,13 +34,16 @@ if ($slip_count > 0) {
   
   ?>
   <form id="print-form" action="index.php" method="post">
-    <input type="hidden" name="columns" id="columns" value="<?php echo SLIPS_PER_PAGE;?>" />
     <div id="slip-actions">
-      <p>
+      <div id="select-elements">
         <input type="button" value="Select All" onclick="select_all();" />
         <input type="button" value="Deselect All" onclick="deselect_all();" />
       </p>
-      <p>
+      <div id="column-element">
+        <label for="columns">Slips per Page:</label>
+        <input type="number" name="columns" id="columns" value="<?php echo SLIPS_PER_PAGE;?>" onchange="update_columns(this.value);" />
+      </div>
+      <div id="action-elements">
         <label for="action">With Selected:</label>
         <select name="action" id="action">
           <option value="print">Print</option>

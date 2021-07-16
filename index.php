@@ -6,11 +6,6 @@ require_once('functions.php');
   <head>
     <title>Print Slips</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .slip {
-        width: calc(850px/<?php echo SLIPS_PER_PAGE; ?>);
-      }
-    </style>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- jQuery UI -->
@@ -23,7 +18,7 @@ require_once('functions.php');
     <div id="main">
       <h1>Print Slips</h1>
       <form id="slip-form" action="index.php" method="post">
-        <div class="form-select">
+        <div class="form-element">
           <label for="printer">Print Queue:</label>
           <select name="printer" id="printer">
           <?php

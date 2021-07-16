@@ -14,7 +14,7 @@ In the [Ex Libris Developer Network](https://developers.exlibrisgroup.com/), cre
 In the application file functions.php:
 
 1) Enter your API key in the definition of API_KEY, inside the empty set of single quotes.
-2) In SLIPS_PER_PAGE, set the number of columns to fit on one page. (Default: 4)
+2) In SLIPS_PER_PAGE, set the default number of columns to fit on one page. (Default: 4)
 3) In SLIP_LIMIT, define the maximum number of printouts to get per API request. (Default and API maximum: 100)
 
 ## Use
@@ -25,6 +25,8 @@ To send pick-up slips to a printout queue, navigate in Alma to Fulfillment > Res
 You can view all pending, printed, or canceled slips in the queue under Admin > Printing > Printouts Queue.
 
 In the application, select the printout queue and click "Get Slips." The printouts in the queue with a status of "Pending" will populate in a gray box below. By default, all printouts will be selected.
+
+You can change the number of slips printed per page using the dropdown on the right. The gray box will update to show an approximate preview of what the slips will look like on regular office paper in landscape mode. Printer settings will affect the final result.
 
 Select the printouts to print and click "Go." This will create a new window containing only the selected slips, and the print dialog for your browser will open. Print the document to your preferred printer, or cancel if needed.
 

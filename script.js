@@ -13,16 +13,23 @@ function get_slips() {
   $('#loading').show();
   $('#slip-results').hide();
   var printer = $('#printer').val();
-  var status = $('#status').val();
   $.ajax({
     url: 'slips.php',
     method: 'post',
-    data: {printer: printer, status: status},
+    data: {printer: printer},
     success: function (results) {
-      $('#slip-results').html(results).show();
+      $('#slip-results').html(results);
+      var columns = $(results).find('#columns').val();
+      update_columns(columns);
+      $('#slip-results').show();
       $('#loading').hide();
     }
   });
+}
+
+// Update the number of columns displayed
+function update_columns(columns) {
+  $('.slip').css('flex-basis', Math.floor(100/columns) + '%');
 }
 
 // Trigger bulk action on printouts (print or cancel)

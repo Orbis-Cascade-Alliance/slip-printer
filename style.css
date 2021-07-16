@@ -18,13 +18,17 @@ html, body {
   margin-bottom: 1rem;
 }
 
-.form-select {
+.form-element {
   display: inline-block;
   margin: 0 1rem 0 0;
 }
 
 label {
   font-weight: bold;
+}
+
+input[type="number"] {
+  width: 3rem;
 }
 
 input[type="button"],
@@ -53,6 +57,8 @@ input[type="button"].dark-purple:hover {
 }
 
 #slips {
+  display: flex;
+  flex-wrap: wrap;
   background: #ccc;
   padding: .5rem;
 }
@@ -62,11 +68,19 @@ input[type="button"].dark-purple:hover {
   text-align: center;
 }
 
+#column-element {
+  float: right;
+}
+
 .slip {
-  display: inline-block;
-  vertical-align: top;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: transparent;
+  font-size: 11pt;
+}
+
+.slip-html {
+  background: #ffffff;
   margin: 0.75rem 0.5rem;
   padding: .5rem;
-  background: #fff;
-  font-size: 11pt;
 }
