@@ -38,13 +38,13 @@ Once printouts are marked either "Printed" or "Canceled," they cannot be reverte
 
 This application is designed to be a starting point. Customize any of the files below to fit the needs of your institution. **In particular, a library should add a robust authentication layer to all PHP files to protect patron privacy.**
 
-- *functions.php:* The file containing definitions and common PHP functions for getting responses from the APIs.
+- *functions.php:* Contains definitions and common PHP functions for getting responses from the APIs.
 - *index.php:* The webpage for getting and printing slips.
 - *loading.gif:* This image displays when "Get Slips" has been triggered but the slips.php hasn't yet responded.
-- *mark.php:* This script is called asynchronously for both the cancel action and the print action, to mark the selected printouts as either "Canceled" or "Printed."
-- *print.css:* This stylesheet styles the webpage generated to print selected slips.
-- *script.js:* This file contains all JavaScript functions for the webpage.
-- *slip.css:* This stylesheet contains rules for modifying the display of slip contents, imported by both style.css for display on the webpage and print.css for printing.
+- *mark.php:* This script is called asynchronously to mark the selected printouts as either "Canceled" or "Printed."
+- *print.css:* Styles the webpage generated to print selected slips.
+- *script.js:* Contains all JavaScript functions for the webpage.
+- *slip.css:* Styles slip contents. This file is imported by both style.css for display on the webpage and print.css for printing.
 - *slips.php:* This script is called asynchronously when the user clicks "Get Slips." It returns the form element containing the selection and action options and the HTML of all slips.
-- *style.css:* This stylesheet styles index.php.
+- *style.css:* Styles index.php.
 
