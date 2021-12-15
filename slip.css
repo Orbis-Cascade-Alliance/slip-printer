@@ -9,9 +9,6 @@
   font-size: 14pt;
   margin: 0;
 }
-.slip h2 strong {
-  display: none;
-}
 
 /* Fit barcode images */
 .slip img {
